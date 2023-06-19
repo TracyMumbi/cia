@@ -1,27 +1,45 @@
-import React from 'react';
+import React from "react";
+import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
-function Footer() {
+const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className="footer-container">
-        <div className="social-media">
-          <h3>Follow Us</h3>
-          <ul>
-            <li><a href="https://web.facebook.com/people/CIA-Ministries/100064932630246/">Facebook</a></li>
-            <li><a href="https://twitter.com/ChristInAction">Twitter</a></li>
-            <li><a href="https://www.instagram.com/ChristInAction">Instagram</a></li>
-          </ul>
+    <>
+      <footer className="mb-0 text-center">
+        <div className="d-flex align-items-center justify-content-center pb-5">
+          <div className="col-md-6">
+            <p className="mb-3 mb-md-0"> {" "}
+            </p>
+           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Get connected with us on social networks:</span>
         </div>
-        <div className="contact-details">
-          <h3>Contact Us</h3>
-          <p>Email: info@christinaction.org</p>
-          <p>Phone:254</p>
-          <p>Address: 00100 Nairobi</p>
+
+        <div>
+          <a href="https://web.facebook.com/people/CIA-Ministries/100064932630246/" className='me-4 text-reset'>
+            <MDBIcon fab icon="facebook-f" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="twitter" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="google" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="instagram" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="linkedin" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="github" />
+          </a>
         </div>
-      </div>
-      <p className="footer-text">&copy; {new Date().getFullYear()} Christ in Action Charity. All rights reserved.</p>
-    </footer>
+        </section>
+          </div>
+        </div>
+      </footer>
+    </>
   );
-}
+};
 
 export default Footer;
