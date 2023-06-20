@@ -7,7 +7,7 @@ const Main = () => {
       <div className="container ">
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src="/img/1.JPG" alt="First slide" duration={4000} transitionDuration={4000}/>
+            <img className="d-block w-100" src="/img/1.JPG" alt="First slide" duration={4000} />
             <Carousel.Caption>
               <h3>Christ in Action Missions</h3>
               <p>

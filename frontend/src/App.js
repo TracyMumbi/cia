@@ -10,6 +10,8 @@ import Footer from "./pages/Footer";
 import Login from "./pages/Login";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Donation from "./pages/Donation";
+import AddMission from "./pages/AddMission";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/missions" element={<Missions />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/donation" element={<Donation />} />
+        <Route path="/addmission" element={<AddMission />} />
       </Routes>
       <Footer />
     </div>
