@@ -24,7 +24,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container my-3 py-3">
+      <div className="container my-3 py-3" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <h1 className="text-center">Contact Us</h1>
         <hr />
         <div className="row my-4 h-100">

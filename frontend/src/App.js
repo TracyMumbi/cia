@@ -12,11 +12,13 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Donation from "./pages/Donation";
 import AddMission from "./pages/AddMission";
+import RevealOnScroll from "./pages/RevealOnScroll";
 
 function App() {
   return (
-    <div>
+    <div  data-aos="fade-right">
       <Navbar />
+        <RevealOnScroll>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -26,6 +28,7 @@ function App() {
         <Route path="/donation" element={<Donation />} />
         <Route path="/addmission" element={<AddMission />} />
       </Routes>
+        </RevealOnScroll>
       <Footer />
     </div>
   );

@@ -10,11 +10,11 @@ const Navbar = () => {
             <div className="container">
                 <NavLink className="navbar-brand fw-bold fs-4 px-2" to="/">
                         <img
-                    src="/img/logo.png"
+                    src="/img/DSC_0053.JPG"
                     width="70"
                     height="70"
                     className="d-inline-block align-top"
-                    alt="FARMART"
+                    alt="CIA"
                     />
                 </NavLink>
                     

@@ -15,7 +15,9 @@ function Missions() {
   }
 
   return (
-    <div className="container">
+    <div className="container" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <div className="row">
         {missions.map((mission) => (
           <div className="col-md-4" key={mission.id}>

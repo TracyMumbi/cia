@@ -56,9 +56,7 @@ function onchange(e){
                 <button
                   className="my-2 mx-auto btn btn-primary"
                   type="submit"
-                  // disabled={isLoading}
-                >
-                  {/* {isLoading ? "Loading..." : "Log In"} */}
+                >Login
                 </button>
               </div>
             </form>
