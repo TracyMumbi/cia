@@ -2,6 +2,7 @@ import React from 'react';
 import { PayPalButton } from 'react-paypal-button-v2';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import axios from 'axios';
 
 // Set up Stripe
 const stripePromise = loadStripe('YOUR_STRIPE_PUBLIC_KEY');
@@ -28,6 +29,21 @@ const DonationButton = () => {
     }
   };
 
+  const handleMpesaSubmit = async (event) => {
+    // Handle M-Pesa donation
+    event.preventDefault();
+    try {
+      const response = await axios.post('YOUR_MPESA_DARAJA_API_URL', {
+        // Provide the necessary M-Pesa Daraja API payload
+      });
+
+      console.log('M-Pesa Response:', response.data);
+      // Handle M-Pesa response as needed
+    } catch (error) {
+      console.error('M-Pesa Error:', error);
+    }
+  };
+
   return (
     <div>
       <h2>Donate via PayPal:</h2>
@@ -43,6 +59,12 @@ const DonationButton = () => {
       <h2>Donate via Stripe:</h2>
       <form onSubmit={handleStripeSubmit}>
         <button type="submit">Donate with Stripe</button>
+      </form>
+
+      <h2>Donate via M-Pesa:</h2>
+      <form onSubmit={handleMpesaSubmit}>
+        {/* Add your M-Pesa donation form fields */}
+        <button type="submit">Donate with M-Pesa</button>
       </form>
     </div>
   );
